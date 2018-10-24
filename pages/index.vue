@@ -11,7 +11,7 @@
         <logo/>
         <vuetify-logo/>
       </div>
-      <v-card>
+      <v-card class="text-color-from-component">
         <v-card-title class="headline">Welcome to the Vuetify + Nuxt.js template</v-card-title>
         <v-card-text>
           <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
@@ -63,3 +63,8 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus" scoped>
+  .text-color-from-component
+    color: red
+</style>
