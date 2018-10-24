@@ -1,5 +1,7 @@
 const pkg = require('./package')
 
+const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
+
 module.exports = {
   mode: 'universal',
 
@@ -53,6 +55,10 @@ module.exports = {
     */
     extend(config, ctx) {
       
-    }
+    },
+    plugins: [
+      new VuetifyLoaderPlugin(),
+    ],
+    transpile: [/^vuetify/],
   }
 }
