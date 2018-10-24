@@ -56,6 +56,7 @@ module.exports = {
     extend(config, ctx) {
       
     },
+    extractCSS: true,
     plugins: [
       new VuetifyLoaderPlugin(),
     ],
